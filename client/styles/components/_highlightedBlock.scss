@@ -1,0 +1,9 @@
+.highlighted-block {
+    background: $white-neutral;
+    border: 2px solid $white-dark;
+    padding: 5px;
+
+    > h1, h2, h3 {
+        margin: 0;
+    }
+}

@@ -1,0 +1,99 @@
+// Button component
+.button {
+  background-color: #FFF;
+  border:none;
+  display: inline-block;
+  margin: 2px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+
+  &.mod-create {
+    background-color: $green-neutral;
+    color: #FFF;
+
+    &:hover {
+      background-color: $green-dark;
+    }
+
+    &:disabled {
+      background-color: lighten(desaturate(#088818, 50%), 20%);
+      color: #DDD;
+    }
+  }
+
+  &.mod-neutral {
+    background-color: $blue-neutral;
+    color: #FFF;
+
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
+
+  &.mod-dangerous {
+    background-color: $red-neutral;
+    color: #FFF;
+
+    &:hover {
+      background-color: $red-dark;
+    }
+  }
+
+  &.mod-act {
+    background-color: $orange-neutral;
+    color: #FFF;
+
+    &:hover {
+      background-color: $orange-dark;
+    }
+  }
+
+  &.mod-link {
+    background-color: $default-neutral;
+    color: $white-neutral;
+
+    &:hover {
+      background-color: $default-dark;
+    }
+  }
+
+  &.mod-small {
+    font-size: 14px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+}
+
+// Button list component
+.buttons-list {
+  margin-bottom: 5px;
+
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+  .buttons-list-left {
+    float: left;
+  }
+
+  .buttons-list-right {
+    float: right;
+  }
+
+  &.mod-bordered {
+    border: 1px solid #dadada;
+    background-color: #eee;
+  }
+}
+
+.buttons-group {
+  display: flex;
+
+  > * {
+    flex-grow: 1;
+    width: 1px;
+  }
+}

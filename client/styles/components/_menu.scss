@@ -1,0 +1,39 @@
+// Menu component
+ul.menu {
+  background: $default-dark;
+  display: flex;
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  li {
+    > a, .login-link-text {
+      background: $default-dark;
+      border-right: 1px solid $default-neutral;
+      color: $white-neutral;
+      display: block;
+      flex-grow: 1;
+      font-size: 18px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: background 200ms, color 200ms;
+      min-width: 100px;
+
+      &:hover {
+        background: $default-neutral;
+        color: $white-neutral;
+      }
+
+      &.active {
+        background: $default-neutral;
+        color: $white-neutral;
+        cursor: default;
+        text-decoration: none;
+      }
+    }
+  }
+}

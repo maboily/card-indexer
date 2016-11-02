@@ -1,0 +1,55 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 40px;
+}
+
+.main-layout {
+  margin: 0 auto;
+
+  .content {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.mod-full-content {
+    max-width: 100%;
+
+    .content {
+      max-width: 100%;
+    }
+
+    > ul, .center-layout {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 968px;
+    }
+  }
+
+  footer {
+    color: #EEE;
+    font-size: 14px;
+    text-align: center;
+    background-color: $default-dark;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    overflow:hidden;
+
+    > a, a:visited {
+      color: #DDD;
+    }
+  }
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

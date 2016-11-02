@@ -1,0 +1,17 @@
+.basic-filters {
+  display: flex;
+  margin-top: 10px;
+
+  .basic-filters-item {
+    margin: 0 5px;
+    flex-grow: 1;
+
+    .basic-filters-item-name {
+      font-weight: bold;
+    }
+
+    > input, select {
+      width: 100%;
+    }
+  }
+}

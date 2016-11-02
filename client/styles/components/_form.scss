@@ -1,0 +1,56 @@
+.form {
+  .form-control {
+    display: block;
+    margin: 10px 0;
+    min-width: 400px;
+
+    > label {
+      display: block;
+      font-weight: bold;
+    }
+
+    &.mod-number {
+      > input {
+        max-width: 50px;
+      }
+    }
+
+    &.mod-required {
+      > label:after {
+        content: ' *';
+        color: #F00;
+        display: inline;
+      }
+    }
+  }
+}
+
+.button-toggleable {
+    background: $gray-neutral;
+    color: #FFF;
+
+    &.toggled {
+        background: $gray-dark;
+    }
+}
+
+button {
+    &:focus {
+        outline: 0;
+    }
+}
+
+input[type=text], select, textarea {
+  background: #FFF;
+  border: 2px solid $white-dark;
+  box-sizing: border-box;
+  color: $default-neutral;
+  font-weight: bold;
+  padding: 10px;
+  max-width: 100%;
+
+  &:focus {
+      border-color: $default-neutral;
+      outline: 0;
+  }
+}

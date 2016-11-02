@@ -1,0 +1,9 @@
+# Deployment files
+mup.json
+settings.json
+
+# IDE files
+.idea
+
+# Project files
+.assets/*

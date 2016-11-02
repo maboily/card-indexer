@@ -1,0 +1,56 @@
+.collection-stats {
+    list-style: none;
+    padding: 0;
+
+    .collection-stats-item {
+        margin-bottom: 20px;
+
+        .collection-stats-item-title {
+            font-weight: bold;
+        }
+    }
+}
+
+.stats-break {
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+
+.stats-data-label {
+    display: block;
+    float: left;
+    width: 300px;
+}
+
+.stats-data-value {
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: right;
+}
+
+
+.stats-data {
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    &.mod-aggregate {
+        font-weight: bold;
+    }
+
+    &.mod-positive {
+        color: #0A0;
+    }
+
+    &.mod-negative {
+        color: #A00;
+    }
+}
+
+.slice text {
+    font-size: 12px;
+}

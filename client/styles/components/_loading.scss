@@ -1,0 +1,22 @@
+@keyframes loading-visibility {
+  0% { opacity: 0; display: none; }
+  50% { opacity: 0; display: block; }
+  100% { opacity: 1; }
+}
+
+.loading {
+  animation: loading-visibility 200ms linear;
+  text-align: center;
+  padding: 10px 5px;
+
+  .loading-text {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &.mod-small {
+    font-size: 12px;
+    padding: 0;
+  }
+}

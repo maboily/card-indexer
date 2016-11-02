@@ -1,0 +1,101 @@
+.list-table {
+  table-layout: fixed;
+  width: 100%;
+
+  > thead {
+    > tr {
+      background: $default-dark;
+      color: #FFF;
+      font-size: 18px;
+
+      > th {
+        font-weight: normal;
+
+        padding: 10px 4px;
+
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  > tbody {
+    > tr {
+      background: $white-neutral;
+      border-bottom: 1px solid $white-dark;
+
+      > td {
+        padding: 0 4px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &.empty-row {
+        color: #777;
+        font-size: 14px;
+        text-align: center;
+
+        > td {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  &.mod-controls {
+    select, input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    th, td {
+      text-align: center;
+    }
+  }
+
+  th, td {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.list-table-enter {
+  opacity: 0.01;
+  transform: translateX(-200px);
+
+  &.list-table-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+  }
+}
+
+.list-table-leave {
+  opacity: 1;
+  transform: translateX(0px);
+
+  &.list-table-leave-active {
+    opacity: 0.01;
+    transform: translateX(200px);
+
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+  }
+}
+
+.sortable-column {
+    .sortable-column-text, .sortable-column-indicator {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .sortable-column-indicator {
+        &.mod-inactive {
+            opacity: 0.2;
+        }
+    }
+}
